@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baby Care Center - Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/customer.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h2>Welcome to Baby Care Center</h2>
+    <h3>Available Time Slots</h3>
+
+    <table class="slots-table">
+      <thead>
+        <tr>
+          <th>Slot ID</th>
+          <th>Time</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="slotsContainer">
+        <!-- Slots will be loaded here -->
+         
+      </tbody>
+    </table>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <script src="../js/slots.js"></script>
+  <script src="../js/customer.js"></script>
+</body>
+</html>
