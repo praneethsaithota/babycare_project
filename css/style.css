@@ -1,5 +1,5 @@
-/* Global Styles */
-body {
+/* Login page body */
+body.login-page {
   font-family: Arial, sans-serif;
   background: #f7f9fc;
   margin: 0;
@@ -9,30 +9,32 @@ body {
   height: 100vh;
 }
 
-/* Login Box */
+/* Login container */
 .login-container {
-  width: 350px;
+  width: 380px;
+  padding: 40px;
   background: #fff;
-  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
   text-align: center;
 }
 
 .login-container h2 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #333;
 }
 
+/* Inputs */
 .login-container input {
   width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
+/* Buttons */
 .login-container button {
   width: 95%;
   padding: 12px;
@@ -50,65 +52,17 @@ body {
   background: #45a049;
 }
 
+/* Switch text */
 .switch {
   margin-top: 15px;
   font-size: 14px;
 }
 
 .switch a {
-  color: #007BFF;
+  color: #4CAF50;
   text-decoration: none;
 }
 
 .switch a:hover {
   text-decoration: underline;
-}
-/* Landing Page */
-.landing-header {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.landing-header h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.landing-header p {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.btn {
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  background: #4CAF50;
-  color: white;
-}
-
-.btn:hover {
-  background: #45a049;
-}
-
-.btn-outline {
-  background: white;
-  border: 2px solid #4CAF50;
-  color: #4CAF50;
-}
-
-.btn-outline:hover {
-  background: #4CAF50;
-  color: white;
 }

@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baby Care Center - Register</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Use login.css instead of style.css -->
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
   <div class="login-container">
     <h2>Register</h2>
-    <form id="registerForm">
-      <input type="text" id="name" placeholder="Full Name" required>
+    <form id="registerForm" onsubmit="return registerUser(event)" >
+      <!-- <input type="text" id="name" placeholder="Full Name" required> -->
       <input type="email" id="email" placeholder="Email" required>
       <input type="password" id="password" placeholder="Password" required>
       <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
-      <button type="submit">Register</button>
+      <button type="submit" class="btn" >Register</button>
+      <br><br>
+      <!-- <button type="button" class="btn cancel" onclick="window.location.href='login.html'">Cancel</button> -->
     </form>
     <p class="switch">Already have an account? <a href="login.html">Login here</a></p>
   </div>

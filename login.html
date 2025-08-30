@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baby Care Center - Login</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
   <div class="login-container">
     <h2>Login</h2>
-    <form id="loginForm">
+    <form id="loginForm"onsubmit="loginUser(event)">
       <!-- Email field: must be valid email format -->
       <input 
         type="email" 
@@ -30,23 +30,13 @@
         title="Password must be at least 6 characters and contain a number"
       >
 
-      <button type="submit">Login</button>
+      <button type="submit" >Login</button>
     </form>
     <p class="switch">New user? <a href="register.html">Register here</a></p>
   </div>
-  <script src="./js/customer.js"> 
+  <script src="./js/auth.js"> </script>
+  <!-- <script src="./js/customer.js"> </script> -->
 
-   </script>
-
-  <script>
-    // Prevent actual submission and just show alert if fields are valid
-    const form = document.getElementById('loginForm');
-    form.addEventListener('submit', function(e) {
-      e.preventDefault(); // stop page reload
-      if(form.checkValidity()) {
-        goToDashboard();
-      }
-    });
-  </script>
+  
 </body>
 </html>
