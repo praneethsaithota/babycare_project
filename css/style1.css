@@ -1,0 +1,99 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 30px;   /* reduced height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.2rem; /* slightly smaller */
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Hero Section */
+.landing-header {
+  position: relative;
+  height: 100vh;
+  background: url("../public/background_landingpage.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px; /* adjust for smaller navbar */
+}
+
+.landing-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.landing-header .content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 15px;
+}
+
+.landing-header p {
+  font-size: 1.5rem; /* subtle text */
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff4757;
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #ff6b6b;
+  transform: scale(1.05);
+}
