@@ -45,5 +45,6 @@ function cancelSlot(id) {
 
 
 function logout() {
-  window.location.href = "../login.html";
+  localStorage.removeItem("currentUser");
+  window.location.href = "../index.html";
 }

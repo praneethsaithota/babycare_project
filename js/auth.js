@@ -32,7 +32,7 @@ function registerUser() {
   localStorage.setItem("users", JSON.stringify(users));
 
   alert("✅ Registered successfully!");
-  window.location.href = "login.html"; 
+  window.location.href = "index.html"; 
 
   return true;
 }
@@ -53,7 +53,7 @@ function loginUser() {
     // alert("✅ Login successful!");
     // store current logged in user
     localStorage.setItem("currentUser", JSON.stringify(validUser));
-    window.location.href = "customer/dashboard.html";
+    window.location.href = "index.html";
 
   } else {
     alert("❌ Invalid email or password. Please try again or register.");
@@ -62,5 +62,6 @@ function loginUser() {
 
 
 function logout() {
-  window.location.href = "../login.html";
+  localStorage.removeItem("currentUser");
+  window.location.href = "index.html";
 }
